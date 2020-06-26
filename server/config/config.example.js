@@ -81,9 +81,9 @@ module.exports =
 	// if you use encrypted private key the set the passphrase
 	tls          :
 	{
-		cert : `${__dirname}/../certs/mediasoup-demo.localhost.cert.pem`,
+		cert : `${__dirname}/../certs/cert.pem`,
 		// passphrase: 'key_password'
-		key  : `${__dirname}/../certs/mediasoup-demo.localhost.key.pem`
+		key  : `${__dirname}/../certs/privkey.pem`
 	},
 	// listening Host or IP 
 	// If omitted listens on every IP. ("0.0.0.0" and "::")
@@ -363,7 +363,7 @@ module.exports =
 			listenIps :
 			[
 				// change 192.0.2.1 IPv4 to your server's IPv4 address!!
-				{ ip: '192.0.2.1', announcedIp: null }
+				{ ip: '101.53.156.138', announcedIp: null }
 
 				// Can have multiple listening interfaces
 				// change 2001:DB8::1 IPv6 to your server's IPv6 address!!
